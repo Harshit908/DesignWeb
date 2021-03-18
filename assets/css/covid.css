@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Homemade+Apple&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+  html, body{
+      width: 100%;
+      height: 100%;
+  }
+  /*navbar styling*/
+  .max-width{
+      max-width: 1300px;
+      padding: 0 80px;
+      margin: auto;
+  }
+  .navbar{
+      position: fixed;
+      width: 100%;
+      padding: 30px 0;
+      font-family: 'Ubuntu', sans-serif;
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+
+    .navbar.sticky{
+        padding: 15px 0;
+        background: crimson;
+    }
+
+
+    .navbar .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .logo a{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .navbar .logo a span{
+        color: crimson;
+    }
+
+    .navbar .menu li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar .menu li a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+      }
+      .navbar .menu li a:hover{
+          color: crimson;
+      }
+
+      .navbar.sticky .logo a span{
+        color: #fff;
+      }
+      .navbar.sticky .menu li a:hover{
+        color: #111;
+      }
+                        /*navbar styling   END*/
+
+  /*menu btn styling start*/
+  .menu-btn{
+      color: #fff;
+      font-size: 23px;
+      cursor: pointer;
+      display: none;
+
+  }
+  /*menu btn styling END*/
+
+
+
+
+                                                                        /*home section*/
+          .home{
+              height: 40vh;
+              font-family: 'Ubuntu', sans-serif;
+          }
+          .home .banner-img{
+              background: url(../images/covid.jpg) no-repeat center;
+              width: 100%;
+              height: 90%;
+              background-size: cover;
+              background-position: 25% 55%;
+              filter: blur(2px);
+              filter: brightness(110%);
+              border-bottom: 3px solid #111;
+          }
+          .home .text-1{
+              position: relative;
+              margin-top: -120px;
+              margin-left: 200px;
+              color: #111;
+              font-weight: bold;
+              font-size: 40px;
+              z-index: 165;
+              font-family: 'Lora', serif;
+              text-transform: uppercase;
+          }
+
+
+
+
+
+          /* Process section start*/
+
+                .process{
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                .process .process-content{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .process .process-content .left{
+                    width: 25%;
+                }
+                .process .process-content .left img{
+                    height: 320px;
+                    width: 550px;
+                    object-fit: cover;
+                    border-radius: 6px;
+
+                }
+                .process .process-content .right{
+                    width: 45%;
+                }
+                .process .process-content .right .text{
+                      font-size: 21px;
+                      font-weight: 600;
+                      margin-bottom: 10px;
+                      font-family: 'EB Garamond', serif;
+                }
+                .process .process-content .right .hori{
+                      color: crimson;
+                      font-family: 'EB Garamond', serif;
+                      font-weight: 700;
+                      font-size: 20px;
+
+                }
+                .process .process-content .right p{
+                    text-align: justify;
+                }
+
+
+
+
+
+                          /*2nd process*/
+
+                .process-2{
+
+                    font-family: 'Poppins', sans-serif;
+                }
+                .process-2 .process-2-content .right img{
+                    height: 320px;
+                    width: 550px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    margin-right: 200px;
+
+
+                }
+                .process-2 .process-2-content{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .process-2 .process-2-content .right{
+                    width: 45%;
+                }
+                .process-2 .process-2-content .left{
+                    width: 45%;
+                    padding-right: -200px;
+                }
+                .process-2 .process-2-content .left .text{
+                      font-size: 21px;
+                      font-weight: 600;
+                      margin-bottom: 10px;
+                      font-family: 'EB Garamond', serif;
+                }
+                .process-2 .process-2-content .left .hori{
+                      color: crimson;
+                      font-family: 'EB Garamond', serif;
+                      font-weight: 700;
+                      font-size: 20px;
+
+                }
+                .process-2 .process-2-content .left p{
+                    text-align: justify;
+                }
+
+
+
+
+
+
+
+
+                                                                    /* Footer section start*/
+                                                                    footer{
+                                                                        font-family: 'Poppins' , sans-serif;
+                                                                        background: #111;
+                                                                        padding: 20px 23px;
+
+                                                                        color: #fff;
+                                                                      }
+                                                                      footer span{
+                                                                          margin-left: 80px;
+                                                                      }
+                                                                      footer .social{
+                                                                          color: #fff;
+                                                                          margin-left: 84%;
+                                                                          margin-top: -24px;
+                                                                      }
+                                                                      .social a{
+                                                                          margin: 7px;
+                                                                      }
+                                                                      .social a i{
+                                                                          transition: all 0.3s ease;
+
+                                                                      }
+                                                                      .social a:hover i{
+                                                                            transform: scale(1.4);
+                                                                      }
+                                                                      .social .fa-instagram{
+                                                                          color: #fff;
+                                                                      }
+                                                                      .social .fa-google{
+                                                                          color: #fff;
+                                                                      }
+                                                                      .social .fa-facebook{
+                                                                          color: #fff;
+                                                                      }
+
+
+
+                                                                      /*responsive media */
+                                                                      @media (max-width: 947px){
+                                                                        .menu-btn{
+                                                                            display: block;
+                                                                            z-index: 999;
+
+                                                                        }
+                                                                        .menu-btn i.active:before{
+                                                                            content: "\f00d";
+                                                                            color: #fff;
+                                                                        }
+                                                                        .navbar .menu{
+                                                                            position: fixed;
+                                                                            height: 100vh;
+                                                                            width: 100%;
+                                                                            left: -100%;
+                                                                            top: 0;
+                                                                            background: #111;
+                                                                            text-align: center;
+                                                                            padding-top: 80px;
+                                                                            transition: all 0.3s ease;
+                                                                        }
+
+                                                                        .navbar .menu.active{
+                                                                            left: 0;
+                                                                        }
+
+                                                                        .navbar .menu li{
+                                                                          display: block;
+                                                                        }
+                                                                        .navbar .menu li a{
+                                                                            display: inline-block;
+                                                                            margin: 20px 0;
+                                                                            font-size: 25px;
+                                                                              color: #fff;
+                                                                        }
+                                                                        .max-width{
+                                                                            max-width: 800px;
+
+                                                                        }
+                                                                        footer span{
+                                                                            margin-left: 10px;
+                                                                        }
+
+                                                                    }
+
+
+                                                                                                                          @media (max-width: 991px){
+                                                                                                                            .max-width{
+                                                                                                                                padding: 0 50px;
+                                                                                                                            }
+                                                                                                                            .process .process-content .column{
+                                                                                                                               width: 100%;
+                                                                                                                            }
+                                                                                                                            .process .process-content .left{
+                                                                                                                               display: flex;
+                                                                                                                               justify-content: center;
+                                                                                                                               margin: 0 auto 60px;
+                                                                                                                             }
+                                                                                                                             .process .process-content .right{
+                                                                                                                                flex: 100%;
+                                                                                                                              }
+                                                                                                                              .process-2 .process-2-content .column{
+                                                                                                                                 width: 100%;
+                                                                                                                              }
+                                                                                                                              .process-2 .process-2-content .right{
+                                                                                                                                 display: flex;
+                                                                                                                                 justify-content: center;
+                                                                                                                                 margin-top: 60px;
+
+                                                                                                                               }
+                                                                                                                               .process-2 .process-2-content .left{
+                                                                                                                                  flex: 100%;
+                                                                                                                                }
+                                                                                                                                .process-2 .process-2-content .right img{
+                                                                                                                                    margin: 0px 0px;
+                                                                                                                                }
+                                                                                                                          }
+
+
+
+                                                                                                                          @media (max-width: 500px){
+                                                                                                                            .max-width{
+                                                                                                                                padding: 0 23px;
+                                                                                                                            }
+                                                                                                                            .navbar .logo a{
+                                                                                                                                font-size: 25px;
+                                                                                                                            }
+                                                                                                                            .home .text-1{
+                                                                                                                            font-size: 34px;
+
+                                                                                                                            }
+                                                                                                                          }
+
+
+                                                                                                                          @media (max-width: 713px){
+                                                                                                                            .home .text-1{
+                                                                                                                              position: relative;
+                                                                                                                              margin-top: -120px;
+                                                                                                                              margin-left: 50px;
+
+
+                                                                                                                            }
+                                                                                                                          }
+
+                                                                                                                          @media (max-width: 500px){
+                                                                                                                            .max-width{
+                                                                                                                                padding: 0 23px;
+                                                                                                                            }
+                                                                                                                            .process .process-content .left img{
+                                                                                                                                height: 130px;
+                                                                                                                                width: 300px;
+                                                                                                                              }
+
+
+                                                                                                                            .process-2 .process-2-content .right img{
+                                                                                                                                  height: 170px;
+                                                                                                                                  width: 360px;
+                                                                                                                                }
+                                                                                                                                .process-2 .process-2-content .left .hori{
+                                                                                                                                    font-size: 14px;
+                                                                                                                            }
+                                                                                                                          }
+
+
+
+                                                                                                                          @media (max-width: 930px){
+
+                                                                                                                            .process .process-content .left img{
+                                                                                                                                height: 200px;
+                                                                                                                                width: 430px;
+                                                                                                                          }
+
+
+                                                                                                                         }
+
+                                                                                                                         @media (max-width: 1220px){
+
+                                                                                                                       .process .process-content .column{
+                                                                                                                          width: 40%;
+                                                                                                                       }
+                                                                                                                       .process .process-content .right .hori{
+                                                                                                                             font-size: 15px;
+
+                                                                                                                       }
+                                                                                                                       .process-2 .process-2-content .right img{
+                                                                                                                           height: 200px;
+                                                                                                                           width: 430px;
+                                                                                                                        }
+
+                                                                                                                      }
+
+                                                                                                                      @media (max-width: 1125px){
+
+                                                                                                                        .process .process-content .column{
+                                                                                                                            width: 40%;
+                                                                                                                          }
+                                                                                                                          .process .process-content .left img{
+                                                                                                                              height: 250px;
+                                                                                                                              width: 480px;
+                                                                                                                        }
+
+                                                                                                                      }
+
+
+
+                                                                                                                          @media (max-width: 600px){
+                                                                                                                              footer span{
+                                                                                                                                  font-size: 12px;
+                                                                                                                                  }
+                                                                                                                                  .social a{
+                                                                                                                                      margin: 5px;
+                                                                                                                                  }
+                                                                                                                                  footer .social{
+
+                                                                                                                                      margin-left: 80%;
+
+                                                                                                                                  }
+
+                                                                                                                              }
+                                                                                                                              @media (max-width: 430px){
+
+                                                                                                                                      .social a{
+                                                                                                                                          margin: 2px;
+                                                                                                                                          font-size: 14px;
+                                                                                                                                      }
+                                                                                                                                      footer .social{
+
+                                                                                                                                          margin-left: 83%;
+
+                                                                                                                                      }
+                                                                                                                                      footer span{
+                                                                                                                                          font-size: 10px;
+                                                                                                                                          }
+
+                                                                                                                                  }
